@@ -20,12 +20,12 @@ const style = {
 
 <template>
   <aside
-    class="scrollbar top-0 h-screen overflow-y-auto bg-gray-100"
+    class="scrollbar top-0  mt-16 h-screen overflow-y-auto bg-gray-100"
     :class="[
       style.mobileOrientation[mobileOrientation],
       sidebarOpen
         ? 'absolute z-40 w-8/12 sm:w-5/12 lg:hidden'
-        : 'hidden lg:z-auto lg:block lg:w-64',
+        : 'hidden lg:z-auto lg:block lg:w-34',
     ]"
   >
     <div class="pb-32 lg:pb-6">

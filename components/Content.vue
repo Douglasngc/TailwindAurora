@@ -9,11 +9,19 @@ defineProps({
 </script>
 
 <template>
-  <div class="mt-4">
-    <div class="container mt-10 border">
+  <div class="mt-4 w-full">
+
+    <div class="container mt-2 rounded-lg border-2 text-orange-400  ">
+      <div class="h-30 text-4xl mt-0 pb-10 pl-4 flex space-x-0 pt-8 rounded-lg border-2 ">Empresas  <a href="#" class=" pt-3 pl-2 relative block"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </a>
+      </div>
+
       <div class="py-8">
         <div class="py-4">
-          <div class="max-w-full overflow-x-auto rounded-lg">
+          <div class="max-w-full overflow-x-auto rounded-lg ">
+
             <table class="w-full leading-normal text-black">
               <thead>
                 <tr>
@@ -500,6 +508,7 @@ defineProps({
                 </tr>
               </tbody>
             </table>
+
             <div
               class="xs:flex-row xs:justify-between flex flex-col items-center p-5"
             >
@@ -547,7 +556,7 @@ defineProps({
                 </button>
                 <button
                   type="button"
-                  class="w-full rounded-r-xl border-y border-r bg-white p-4 text-base text-gray-600 hover:bg-gray-100"
+                  class="w-full rounded-r-xl border-y border-r bg-white p-4 text-base text-white-600 hover:bg-gray-100"
                 >
                   <svg
                     width="9"

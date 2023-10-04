@@ -30,11 +30,11 @@ watch(route, () => {
       <Overlay />
       <Sidebar mobile-orientation="end" />
       <div
-        class="flex h-screen w-full flex-col pl-0 lg:w-[calc(100%-16rem)] lg:space-y-4"
+        class="flex h-screen w-full flex-col pl-0 lg:w-full lg:space-y-4"
       >
         <TopBar />
         <main
-          class="h-screen overflow-auto bg-white px-2 pb-36 pt-4 md:px-4 md:pb-8 lg:rounded-tl-3xl lg:px-6"
+          class="h-screen w-screen overflow-auto bg-white px-2 pb-26 pt-4 md:px-4 md:pb-8 lg:rounded lg:px-6"
         >
           <slot />
         </main>
