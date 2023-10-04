@@ -1,12 +1,11 @@
-# Salvia-kit Dashboard V9 with Nuxt 3
+# Protótipo Dashboard Aurora
 
-![Salvia-kit Dashboard v9](https://www.salvia-kit.com/images/dashboards/dashv9.png)
 
 ## 📋 Documentation
 
-You can see the documentation on [http://localhost:3000/admin/documentation](http://localhost:3000/admin/documentation)
+Documentação aqui [http://localhost:3000/admin/documentation](http://localhost:3000/admin/documentation)
 
-## Browser Support
+## Suporte aos seguintes navegadores
 
 |                                                               Chrome                                                               |                                                               Firefox                                                                |                                                               Edge                                                                |                                                               Safari                                                                |                                                               Opera                                                                |
 | :--------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------: |
@@ -17,13 +16,13 @@ You can see the documentation on [http://localhost:3000/admin/documentation](htt
 If you would like to contribute on the project, fixing bugs, please follow our [Contribution guide](https://github.com/salvia-kit/dashboard-v1-cra/blob/main/contributing.md)
 
 
-# Nuxt 3 Minimal Starter
+# Nuxt 3 
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+Doc Nuxt 3 [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
 ## Setup
 
-Make sure to install the dependencies:
+Instale as depêndecias
 
 ```bash
 # npm
@@ -36,7 +35,7 @@ pnpm install
 yarn install
 ```
 
-## Development Server
+## Rode o server
 
 Start the development server on `http://localhost:3000`:
 
