@@ -16,7 +16,7 @@ onMounted(() => {
 
 watch(route, () => {
   // close sidebar on route changes when viewport is less than 1024px
-  if (sidebarOpen && window.innerWidth < 1024) {
+  if (sidebarOpen && window.innerWidth < 1900) {
     closeSidebar();
   }
 });
@@ -28,17 +28,30 @@ watch(route, () => {
   <div class="relative h-screen overflow-hidden bg-white">
     <div class="flex items-start">
       <Overlay />
+      <div class="flex">
       <Sidebar mobile-orientation="end" />
+    </div>
       <div
         class="flex h-screen w-full flex-col pl-0 lg:w-full lg:space-y-4"
       >
         <TopBar />
+       <div class="flex-1 " :class="{'ml-sidebar-open': sidebarOpen}">
         <main
           class="h-screen w-screen overflow-auto bg-white px-2 pb-26 pt-4 md:px-4 md:pb-8 lg:rounded lg:px-6"
         >
           <slot />
         </main>
       </div>
+      </div>
     </div>
   </div>
 </template>
+<style scoped>
+.ml-sidebar-open {
+  margin-left: 200px; /* Ajuste conforme a largura da barra lateral */
+}
+.flex-1 {
+  transition: margin-left 0.3s; /* Tempo da transição (ajuste conforme necessário) */
+}
+</style>
+

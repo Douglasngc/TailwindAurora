@@ -8,6 +8,8 @@ const openSidebar = () => {
 
 const closeSidebar = () => {
   sidebarOpen.value = false;
+  // Adicione o código para mover os itens de volta à posição original
 };
+
 
 export { sidebarOpen, openSidebar, closeSidebar };

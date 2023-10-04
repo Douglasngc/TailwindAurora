@@ -11,6 +11,11 @@ import ReportIcon from "./icons/ReportIcon.vue";
 import SidebarItem from "./SidebarItem.vue";
 import SettingsIcon from "./icons/SettingsIcon.vue";
 </script>
+<script lang="ts">
+export default {
+  // Propriedades, métodos e lógica do componente
+};
+</script>
 
 <template>
   <div>
@@ -66,9 +71,10 @@ import SettingsIcon from "./icons/SettingsIcon.vue";
     </div>
 
     <div>
-      <SidebarItem title="Documentation" to="/admin/documentation">
-        <DocIcon />
-      </SidebarItem>
+      <SidebarItem
+        title="Documentation"
+        to="/admin/documentation"
+      ></SidebarItem>
     </div>
   </div>
 </template>

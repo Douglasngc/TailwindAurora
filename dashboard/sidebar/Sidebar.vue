@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { sidebarOpen } from "../store";
 import SidebarItems from "./SidebarItems.vue";
-import SidebarHeader from "./SidebarHeader.vue";
+
 
 defineProps({
   mobileOrientation: {
@@ -15,25 +15,33 @@ const style = {
     start: "left-0",
     end: "left-0",
   },
+
+  
 };
 </script>
-
 <template>
-  <aside
-    class="scrollbar top-0  mt-16 h-screen overflow-y-auto bg-gray-100"
-    :class="[
-      style.mobileOrientation[mobileOrientation],
-      sidebarOpen
-        ? 'absolute z-40 w-8/12 sm:w-5/12 lg:hidden'
-        : 'hidden lg:z-auto lg:block lg:w-34',
-    ]"
-  >
-    <div class="pb-32 lg:pb-6">
-      <SidebarHeader />
+ <aside
+      class="z-10 w-34 mt-10 h-full overflow-y-auto bg-gray-100"
+      :class="[sidebarOpen ? 'absolute' : 'hidden']"
+    >
+    <div class="flex flex-col pb-24 lg:pb-6">
+     
       <SidebarItems />
+    </div>
+    <div class="mb-20	">
+      <div class="text-center py-4">
+        <p class="text-xs">Powered by</p>
+        <img src="https://www.npxtech.com.br/images/logo.png" alt="Logo" class="mx-auto h-8" />
+      </div>
     </div>
   </aside>
 </template>
+
+<script lang="ts">
+export default {
+  // Propriedades, métodos e lógica do componente
+};
+</script>
 
 <style scoped>
 .scrollbar::-webkit-scrollbar {

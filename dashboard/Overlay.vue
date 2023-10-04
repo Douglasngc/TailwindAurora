@@ -13,3 +13,8 @@ import { sidebarOpen, closeSidebar } from "./store";
     @click="closeSidebar"
   />
 </template>
+<script lang="ts">
+export default {
+  // Propriedades, métodos e lógica do componente
+}
+</script>

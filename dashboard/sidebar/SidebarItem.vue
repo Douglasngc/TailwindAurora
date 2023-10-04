@@ -13,6 +13,11 @@ defineProps({
 });
 const route = useRoute();
 </script>
+<script lang="ts">
+export default {
+  // Propriedades, métodos e lógica do componente
+};
+</script>
 
 <template>
   <RouterLink :to="to">
