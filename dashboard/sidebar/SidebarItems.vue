@@ -19,7 +19,7 @@ export default {
 
 <template>
   <div>
-    <div class="border-b py-2">
+    <div class="w-44 py-2">
       <SidebarItem title="Dashboard" to="/">
         <!--Icone Dashboard -->
         <DashboardIcon />

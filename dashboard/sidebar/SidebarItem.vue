@@ -23,7 +23,11 @@ export default {
   <RouterLink :to="to">
     <span
       class="my-2 flex w-full items-center justify-start p-4 font-thin"
-      :class="[route.path === to ? 'font-medium text-black' : 'text-gray-600']"
+      :class="[
+        route.path === to
+          ? 'font-medium bg-white border-4  border-y-white border-r-white border-l-orange-600 text-orange-600 '
+          : ' text-black',
+      ]"
     >
       <span>
         <slot />
