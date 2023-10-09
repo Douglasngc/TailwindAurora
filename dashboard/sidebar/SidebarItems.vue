@@ -30,7 +30,7 @@ export default {
         <AtendimentosIcon />
       </SidebarItem>
 
-      <SidebarItem title="Empresas" to="/">
+      <SidebarItem title="Empresas" to="/admin/empresas">
         <!--Icone Empresas-->
         <EmpresasIcon />
       </SidebarItem>
