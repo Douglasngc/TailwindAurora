@@ -1,7 +1,7 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="mt-0 mb-24 w-screen flex">
-    <div class="mt-2 rounded-lg shrink w-3/4 border-2 text-orange-400">
+  <div class="mt-0 mb-10 pr-4 w-screen flex">
+    <div class="mt-2 mb-14 rounded-lg shrink w-3/4 border-2 text-orange-400">
       <div
         class="bg-gray-200 text-4xl mt-0 pb-1 pl-1 flex space-x-0 pt-8 rounded-t-lg border-3"
       >
@@ -49,12 +49,9 @@
                   >
                     Ações
                   </th>
-                  <th
-                    scope="col"
-                    class="border-b border-gray-200 px-5 py-3 text-left text-sm font-normal uppercase"
-                  />
                 </tr>
               </thead>
+
               <tbody class="mr-0 w-full text-sm font-normal text-black">
                 <tr
                   v-for="(empresa, index) in empresas"
