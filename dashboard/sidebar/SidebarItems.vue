@@ -19,13 +19,13 @@ export default {
 
 <template>
   <div>
-    <div class="w-44 py-2">
-      <SidebarItem title="Dashboard" to="/">
+    <div class="pt-0">
+      <SidebarItem title="Dashboard" to="/admin/Dash">
         <!--Icone Dashboard -->
         <DashboardIcon />
       </SidebarItem>
 
-      <SidebarItem title="Atendimento" to="/">
+      <SidebarItem title="Atendimento" to="/admin/Atendimento">
         <!--Icone Atendimentos-->
         <AtendimentosIcon />
       </SidebarItem>
@@ -35,46 +35,39 @@ export default {
         <EmpresasIcon />
       </SidebarItem>
 
-      <SidebarItem title="Clientes" to="/">
+      <SidebarItem title="Clientes" to="/admin/clientes">
         <!--Icone Clientes-->
         <ClientesIcon />
       </SidebarItem>
 
-      <SidebarItem title="Tickets" to="/">
+      <SidebarItem title="Tickets" to="/admin/tickets">
         <!--Icone Tickets-->
         <TicketsIcon />
       </SidebarItem>
 
-      <SidebarItem title="Campanhas" to="/">
+      <SidebarItem title="Campanhas" to="/admin/TesteRoute">
         <!--Icone Campanhas-->
         <CampanhasIcon />
       </SidebarItem>
 
-      <SidebarItem title="Quadros" to="/">
+      <SidebarItem title="Quadros" to="/admin/TesteRoute">
         <!--Icone Quadros-->
         <QuadrosIcon />
       </SidebarItem>
 
-      <SidebarItem title="Chat interno" to="/">
+      <SidebarItem title="Chat interno" to="/admin/TesteRoute">
         <!--Icone Chat-->
         <ChatIcon />
       </SidebarItem>
 
-      <SidebarItem title="Settings" to="/">
+      <SidebarItem title="Settings" to="/admin/settings">
         <!--Icone Configuração-->
         <SettingsIcon />
       </SidebarItem>
 
-      <SidebarItem title="Relatórios" to="/">
+      <SidebarItem title="Relatórios" to="/admin/TesteRoute">
         <ReportIcon />
       </SidebarItem>
-    </div>
-
-    <div>
-      <SidebarItem
-        title="Documentation"
-        to="/admin/documentation"
-      ></SidebarItem>
     </div>
   </div>
 </template>

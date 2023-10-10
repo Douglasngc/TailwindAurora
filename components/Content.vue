@@ -1,19 +1,19 @@
 <!-- eslint-disable vue/multi-word-component-names -->
 <template>
-  <div class="mt-0 mb-52 w-auto flex flex-auto">
+  <div class="mt-0 mb-24 w-screen flex">
     <div class="mt-2 rounded-lg shrink w-3/4 border-2 text-orange-400">
       <div
-        class="h-30 text-4xl mt-0 pb-10 pl-4 flex space-x-0 pt-8 rounded-t-lg border-3"
+        class="bg-gray-200 text-4xl mt-0 pb-1 pl-1 flex space-x-0 pt-8 rounded-t-lg border-3"
       >
         Empresas
-        <a href="#" class="w-34 pt-3 pl-2 relative block">
+        <a href="#" class="pt-1 pl-2 relative block">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
             stroke-width="1.5"
             stroke="currentColor"
-            class="w-6 h-6"
+            class="w-10 h-10"
           >
             <path
               stroke-linecap="round"
@@ -24,11 +24,11 @@
         </a>
       </div>
 
-      <div class="py-8">
-        <div class="py-4">
+      <div class="py-1">
+        <div class="py-1">
           <div class="overflow-x-auto rounded-lg">
-            <table class="w-full h-20 leading-normal text-black">
-              <thead>
+            <table class="w-full pr-2 h-auto mb-2 text-black">
+              <thead class="">
                 <tr>
                   <th
                     scope="col"
@@ -55,20 +55,19 @@
                   />
                 </tr>
               </thead>
-              <tbody class="text-black">
-                <tr v-for="(empresa, index) in empresas" :key="index">
+              <tbody class="mr-0 w-full text-sm font-normal text-black">
+                <tr
+                  v-for="(empresa, index) in empresas"
+                  :key="index"
+                  :style="{
+                    backgroundColor:
+                      index % 2 === 0 ? 'rgb(213, 230, 246)' : 'white',
+                  }"
+                  scope="col"
+                >
                   <td class="border-b border-gray-200 p-5 text-sm">
                     <div class="flex items-center">
-                      <div class="shrink-0">
-                        <a :href="empresa.link" class="relative block">
-                          <img
-                            :alt="`profil-${index}`"
-                            :src="empresa.imagem"
-                            class="mx-auto h-10 w-10 rounded-full object-cover"
-                          />
-                        </a>
-                      </div>
-                      <div class="ml-3">
+                      <div class="ml-3 mr-1 pr-2">
                         <p class="whitespace-nowrap">{{ empresa.nome }}</p>
                       </div>
                     </div>
@@ -76,12 +75,10 @@
                   <td class="border-b border-gray-200 p-5 text-sm">
                     <p class="whitespace-nowrap">{{ empresa.codigoExterno }}</p>
                   </td>
-                  <td
-                    class="border-b border-gray-200 p-5 flex space-x-0 text-sm"
-                  >
+                  <td class="border-b border-gray-200 p-2 flex space-x-0">
                     <a
                       :href="empresa.editarLink"
-                      class="text-blue-600 flex space-x-0 hover:text-blue-900"
+                      class="text-blue-600 pt-5 pb-5 flex space-x-0 hover:text-blue-900"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -100,7 +97,7 @@
                     </a>
                     <a
                       :href="empresa.apagarLink"
-                      class="text-red-600 flex space-x-0 hover:text-red-900"
+                      class="text-red-600 pt-5 pb-5 flex space-x-0 hover:text-red-900"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -121,11 +118,11 @@
                 </tr>
               </tbody>
             </table>
-            <div class="py-4 flex justify-center items-center space-x-4">
+            <div class="py-8 flex justify-center items-center space-x-4">
               <button
                 v-for="page in 4"
                 :key="page"
-                class="px-4 py-2 rounded-full text-orange-400 hover:bg-orange-400 hover:text-white transition-colors"
+                class="px-4 py-2 rounded-lg text-black bg-gray-200 hover:bg-orange-400 hover:text-white transition-colors"
               >
                 {{ page }}
               </button>

@@ -10,7 +10,7 @@ const toggleSidebar = () => {
 };
 </script>
 <template>
-  <header class="z-14 relative h-52 w-full bg-white shadow md:h-52">
+  <header class="z-14 relative h-52 w-full bg-white shadow-lg h-52">
     <div class="mx-34 h-14 w-full flex px-3">
       <div class="relative flex">
         <button
@@ -46,7 +46,7 @@ const toggleSidebar = () => {
           placeholder="Pesquisar"
         />
       </div>
-      <div class="mr-10 relative flex space-x-4 items-center">
+      <div class="mr-3 relative flex space-x-4 items-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"

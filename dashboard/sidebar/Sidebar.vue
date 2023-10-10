@@ -1,3 +1,5 @@
+<!-- eslint-disable vue/multi-word-component-names -->
+<!--eslint-disable-next-line vue/multi-word-component-names -->
 <script setup lang="ts">
 import { sidebarOpen } from "../store";
 import SidebarItems from "./SidebarItems.vue";
@@ -8,24 +10,17 @@ defineProps({
     default: "end",
   },
 });
-
-const style = {
-  mobileOrientation: {
-    start: "left-0",
-    end: "left-0",
-  },
-};
 </script>
 
 <template>
   <aside
-    class="z-10 w-34 mt-14 h-full overflow-auto bg-gray-100 scrollbar"
+    class="w-34 scrollbar mb-20 mt-12 h-screen overflow-auto bg-gray-200"
     :class="[sidebarOpen ? 'absolute' : 'hidden']"
   >
-    <div class="flex flex-col pb-24 lg:pb-6">
+    <div class="pr-0 pt-1 pb-1 lg:pb-1">
       <SidebarItems />
     </div>
-    <div class="mb-20">
+    <div class="mb-2 pr-4 mt-16">
       <div class="text-center py-4">
         <p class="text-xs">Powered by</p>
         <img
@@ -51,7 +46,7 @@ export default {
 }
 
 .scrollbar::-webkit-scrollbar {
-  width: 6px;
+  width: 0px;
 }
 
 .scrollbar::-webkit-scrollbar-thumb {
