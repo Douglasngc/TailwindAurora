@@ -32,7 +32,7 @@
                 <tr>
                   <th
                     scope="col"
-                    class="border-b border-gray-200 px-5 py-3 text-left text-sm font-normal uppercase"
+                    class="border-b border-gray-200 pl-3 text-left text-sm font-normal uppercase"
                   >
                     Empresas
                   </th>
@@ -52,7 +52,7 @@
                 </tr>
               </thead>
 
-              <tbody class="mr-0 w-full text-sm font-normal text-black">
+              <tbody class="mr-0 pl-2 w-full text-sm font-normal text-black">
                 <tr
                   v-for="(empresa, index) in empresas"
                   :key="index"
@@ -62,7 +62,7 @@
                   }"
                   scope="col"
                 >
-                  <td class="border-b border-gray-200 p-5 text-sm">
+                  <td class="border-b border-gray-200 text-sm">
                     <div class="flex items-center">
                       <div class="ml-3 mr-1 pr-2">
                         <p class="whitespace-nowrap">{{ empresa.nome }}</p>
@@ -75,7 +75,7 @@
                   <td class="border-b border-gray-200 p-2 flex space-x-0">
                     <a
                       :href="empresa.editarLink"
-                      class="text-blue-600 pt-5 pb-5 flex space-x-0 hover:text-blue-900"
+                      class="text-black ml-2 pt-5 pb-5 flex space-x-0 hover:text-blue-900"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -94,7 +94,7 @@
                     </a>
                     <a
                       :href="empresa.apagarLink"
-                      class="text-red-600 pt-5 pb-5 flex space-x-0 hover:text-red-900"
+                      class="text-black ml-2 pt-5 pb-5 flex space-x-1 hover:text-red-900"
                     >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
@@ -115,7 +115,10 @@
                 </tr>
               </tbody>
             </table>
-            <div class="py-8 flex justify-center items-center space-x-4">
+            <div
+              class="py-8 flex text-black justify-center items-center space-x-2"
+            >
+              <div>Anterior</div>
               <button
                 v-for="page in 4"
                 :key="page"
@@ -123,6 +126,7 @@
               >
                 {{ page }}
               </button>
+              <div>Próxima</div>
             </div>
           </div>
         </div>
